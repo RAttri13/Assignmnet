@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+
+    <title>JavaScript Program To Convert Celsius to Fahrenheit</title>
+
+</head>
+
+<body>
+    <a href="../index.html">Back</a>
+
+    <h1> 20. Make a Simple Calculator</h1>
+   
+    <button onclick="genrateRandomNumber()">Random Number </button>
+    <p id="result"></p>
+
+    <pre>
+            <code>
+      
+                function genrateRandomNumber (){
+        const result = document.getElementById("result");
+        output=( Math.random()*100).toFixed(2);
+        result.innerHTML=`Random Number is ::   ${output}`;
+
+     }
+      
+            </code>
+          </pre>
+
+    <script>
+     function genrateRandomNumber (){
+        const result = document.getElementById("result");
+        output=( Math.random()*100).toFixed(2);
+        result.innerHTML=`Random Number is ::   ${output}`;
+
+     }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+.bg-header{
+    background-color: #f9d505 !important;
+
+}
+a{
+    text-decoration: none !important;
+    color:grey !important;
+    display: inline !important;
+    padding-left:1rem 
+   
+}  
+body{
+    padding: 2rem;
+    position: relative;
+    height: 100vh;
+
+}
+.container{
+width: 100%;
+    height: 90vh;
+
+}
+.containerFixed{
+    background: url(./js.jpg) no-repeat;
+   background-attachment: fixed;
+   background-position:90% 50px;
+height: 100px;
+width: 100%
+
+}
+
+button{
+    margin-top:1rem 
+}
+.buttons{
+    display: flex;
+    gap: 5rem
+}
+
+.previousIcon{
+    display: inline-block;
+    width: 27px;
+    height: 36px;
+}
+.previousIcon>svg{
+    width: 100%;
+    height: 100%;
+    color: black
+}
+
+#result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+#hamburger{
+    position: absolute;
+    width: 50%;
+    font-size: 14px;
+    display: none;
+    height: 125vh;
+    overflow: scroll;
+    display: none;
+
+}
+#hamburger>div{
+    z-index: 99;
+}
+hr{
+    width: 100%;
+    
+}
+.close{
+    right: 20px;
+top: 10px;
+background: white;
+padding: 0.25rem;
+}
+.hamburgerOpen{
+    padding: 0.25rem;
+    width: 70px;
+    height: 70px;
+    margin-top: 0px;
+}
+.hamburgerOpen>svg{
+    width: 75%;
+    height: 75%;
+}
+whiteBorder{
+    border: 1px solid white
+}
+.codeImg{
+    width: 100%;
+    height: 100%;
+}
+.codeImg > img{
+    width: 100%;
+    height: 100%;
+}
+.flex-1{
+    flex: 1
+}
+.flex-3{
+    flex: 2
+}
