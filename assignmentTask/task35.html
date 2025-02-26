@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".../index.css">
+
+    <title>Find the Factors of a Number</title>
+
+</head>
+
+<body>
+    <a href="../index.html">Back</a>
+
+    <h1> 35. Program to Print the Fibonacci Sequence</h1>
+
+    <input placeholder="type a number" type="number" id="num1" />
+    <span id="result"></span>
+    <button onclick="getFactors()">Get Factors</button>
+    <pre>
+            <code>
+
+            </code>
+          </pre>
+
+    <script>
+        function getFactors() {
+            const num1 = document.getElementById("num1").value;
+            const result = document.getElementById("result");
+            const num1Value = parseFloat(num1);
+
+            if (isNaN(num1Value)) {
+                alert("Enter a valid input");
+            } else {
+                result.innerHTML = `Result : ${handleFactors(num1Value)}`
+            }
+        }
+
+        function handleFactors(a) {
+            for (let i = 1; i <= 10; i++) {
+                if (a % i == 0) { console.log(i) };
+            }
+        }
+
+    </script>
+</body>
+
+</html>
