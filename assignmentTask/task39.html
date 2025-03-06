@@ -3,46 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".../index.css">
-
-    <title>Find the Factors of a Number</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    
+    <title >Lets Pay With JS</title>
 
 </head>
+<body id="bodyContainer" class="bg-lightTheme">
+        <div id="sectionsContainer" class="d-flex flex-column g-2 opacityHam ">
+            <div id="sectionsSubContainer" class="d-flex flex-row g-2 opacityHam ">
+                <div id="UICont" class="w-100 d-none d-flex flex-column align-items-center  rounded-start bg-white w-75 gap-3 overflow-scroll border border-success p-4  mb-2 border-opacity-25 bg-white">
+                    <div id="displayUIContainer" class="bg-lightTheme p-3  h-100 d-flex flex-column gap-3 align-items-center w-75 rounded-3">
+                            <input placeholder="type a word" type="text" id="num1" class="px-3 py-1 rounded w-100"/>
+                            <button onclick="handlesCapatilaize()" id="outputBtn" class="rounded p-2 w-100">Capitalise</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
 
-<body>
-    <a href="../index.html">Back</a>
-
-    <h1> 26. Program to Print the Fibonacci Sequence</h1>
-
-    <input placeholder="type a number" type="number" id="num1" />
-    <span id="result"></span>
-    <button onclick="getFactors()">Get Factors</button>
-    <pre>
-            <code>
-
-            </code>
-          </pre>
-
-    <script>
-        function getFactors() {
+     
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+        <script src="../index.1.js"></script>
+        <!-- <script src="./Components/1InputField.js"></script> -->
+        
+        <script>
+        function handlesCapatilaize() {
             const num1 = document.getElementById("num1").value;
             const result = document.getElementById("result");
-            const num1Value = parseFloat(num1);
 
-            if (isNaN(num1Value)) {
-                alert("Enter a valid input");
-            } else {
-                result.innerHTML = `Result : ${handleFactors(num1Value)}`
-            }
+         if  (/^.*[A-Za-z]+$/.test(num1)){
+            result.innerHTML = `Result : ${UpperCase(num1)}`;
+                result.style.display="flex"        
+          }else alert("Enter A Valid Character")
+
+        }
+     
+        function UpperCase(a) {
+            return  [...a[0].toUpperCase(),...a.slice(1)].join("");
         }
 
-        function handleFactors(a) {
-            for (let i = 1; i <= 10; i++) {
-                if (a % i == 0) { console.log(i) };
-            }
-        }
 
     </script>
+
 </body>
 
 </html>
