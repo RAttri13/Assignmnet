@@ -17,7 +17,6 @@
         <div id="sectionsContainer" class="d-flex flex-row g-2 opacityHam ">
             <div class="d-flex flex-column align-items-center  rounded-start bg-warning-subtle w-75 gap-3 overflow-scroll border border-success p-4  mb-2 border-opacity-25">
                 <div id="leftSectionContainer" class="d-flex flex-column gap-3 align-items-center w-75">
-                        <input placeholder="type a E-mail" type="text" id="num1" class="px-3 py-1 rounded w-100"/>
                         <button onclick="countVowel()" id="outputBtn" class="rounded p-2 w-100">Check E-mail</button>
                 </div>
             </div>
@@ -31,26 +30,17 @@
         <script>
  
         function countVowel() {
-            const num1 = document.getElementById("num1").value;
+     
+
             const result = document.getElementById("result");
 
-            if  (/^.*[A-Za-z]+$/.test(num1)){
-                result.innerHTML = ` ${vowel(num1)} Vowel `;
-                    result.style.display="flex"        
-            }else alert("Enter A Valid String")
+            // if  (/^.*[A-Za-z]+$/.test(num1)){
+                result.innerHTML = True;
+            //         result.style.display="flex"        
+            // }else alert("Enter A Valid String")
 
         }
-     
-        function vowel(a) {
-            let count=0;
-            b=a.split("");
-            for(i=0;i<b.length;i++){
-                if((b[i] == "a")||(b[i] == "e")||(b[i] == "i")||(b[i] == "o")||(b[i]=="u")){
-                    count =count+1;
-                }
-            }
-           return(count) 
-        }
+
 
 
     </script>

@@ -10,51 +10,62 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     
     <title >Lets Pay With JS</title>
-
+<style>
+    #imgCont{
+        width: 500px;
+        height: 100px;
+    }
+</style>
 </head>
-<body id="bodyContainer">
 
-        <div id="sectionsContainer" class="d-flex flex-row g-2 opacityHam ">
-            <div class="d-flex flex-column align-items-center  rounded-start bg-warning-subtle w-75 gap-3 overflow-scroll border border-success p-4  mb-2 border-opacity-25">
-                <div id="leftSectionContainer" class="d-flex flex-column gap-3 align-items-center w-75">
-                        <input placeholder="type a word" type="text" id="num1" class="px-3 py-1 rounded w-100"/>
-                        <button onclick="countVowel()" id="outputBtn" class="rounded p-2 w-100">Count Vowels</button>
-                </div>
-            </div>
-        </div>
+
      
+<body id="bodyContainer" class="bg-lightTheme">
+    <div id="sectionsContainer" class="d-flex flex-column g-2 opacityHam ">
+     <div id="sectionsSubContainer" class="d-flex flex-row g-2 opacityHam ">
+        <div id="UICont" class="w-100 d-flex flex-column align-items-center  rounded-start bg-white w-75 gap-3 overflow-scroll border border-success p-4  mb-2 border-opacity-25 bg-white">
+            <div id="displayUIContainer" class="bg-lightTheme p-3  h-100 d-flex flex-column gap-3 align-items-center w-75 rounded-3">
+                <input placeholder="type a number" type="text" id="num1" class="px-3 py-1 rounded w-100">
+                <button onclick="getDim()" id="outputBtn" class="rounded p-2 w-100">Get Dimensions</button>
+            
+            </div>
+            
+        </div>  
+        
+      </div>
+    </div>
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
         <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-        <script src="../index.js"></script>
-        <!-- <script src="./Components/1InputField.js"></script> -->
+        <script src="../index.1.js"></script>
         
         <script>
+   
+   function getDim() {
+    const num1 = document.getElementById("num1").value;
+    const result = document.getElementById("result");
+
+    if ((/^\d+(\.\d+)?$/).test(num1)) {
+        if (num1 % 1 === 0) {
+            result.innerHTML = "The number is an integer.";
+        } else {
+            result.innerHTML = "The number is a float.";
+        }
+        result.style.display = "flex"; 
+    } else {
+        alert("Enter The Correct Number");
+    }
+}
  
-        function countVowel() {
-            const num1 = document.getElementById("num1").value;
-            const result = document.getElementById("result");
-
-            if  (/^.*[A-Za-z]+$/.test(num1)){
-                result.innerHTML = ` ${vowel(num1)} Vowel `;
-                    result.style.display="flex"        
-            }else alert("Enter A Valid String")
-
-        }
-     
-        function vowel(a) {
-            let count=0;
-            b=a.split("");
-            for(i=0;i<b.length;i++){
-                if((b[i] == "a")||(b[i] == "e")||(b[i] == "i")||(b[i] == "o")||(b[i]=="u")){
-                    count =count+1;
-                }
-            }
-           return(count) 
-        }
-
-
-    </script>
+        </script>
+    
+    </body>
+    
 
 </body>
 
 </html>
+
+
+
+
+

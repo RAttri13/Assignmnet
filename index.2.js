@@ -112,8 +112,8 @@ const tasks=
  { "href": "./task103.html", "text": "Write to Console" },
  { "href": "./task104.html", "text": "Convert Date to Number" },
 ]
-
-let loc=window.location.pathname.split("/");
+console.log("window" , window)
+let loc= window.location.pathname.split("/");
 let taskPage = loc[loc.length - 1];
 const totalTasks = tasks.length;
 if(taskPage=="index.html"){

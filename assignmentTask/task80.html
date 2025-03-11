@@ -18,13 +18,10 @@
 <body id="bodyContainer" class="bg-lightTheme">
     <div id="sectionsContainer" class="d-flex flex-column g-2 opacityHam ">
      <div id="sectionsSubContainer" class="d-flex flex-row g-2 opacityHam ">
-        <div id="UICont" class="w-100 d-none d-flex flex-column align-items-center  rounded-start bg-white w-75 gap-3 overflow-scroll border border-success p-4  mb-2 border-opacity-25 bg-white">
+        <div id="UICont" class="w-100 d-flex flex-column align-items-center  rounded-start bg-white w-75 gap-3 overflow-scroll border border-success p-4  mb-2 border-opacity-25 bg-white">
             <div id="displayUIContainer" class="bg-lightTheme p-3  h-100 d-flex flex-column gap-3 align-items-center w-75 rounded-3">
                 <input placeholder="Enter Array" type="text" id="num1" class="px-3 py-1 rounded w-100"/>
-                <input placeholder="Enter element" type="text" id="num2" class="px-3 py-1 rounded w-100"/>
-                <input placeholder="Enter element" type="text" id="num3" class="px-3 py-1 rounded w-100"/>
-                <button onclick="checkArray()" id="outputBtn" class="rounded p-2 w-100">Add In Array</button>
-            
+                <button onclick="checkArray()" id="outputBtn" class="rounded p-2 w-100">Get Random Element</button>
             </div>
             
         </div>  
@@ -39,24 +36,20 @@
         <script>
                     function checkArray() {
                         const num1 = document.getElementById("num1").value;
-                        const num2 = document.getElementById("num2").value;
-                        const num3 = document.getElementById("num3").value;
                         const result = document.getElementById("result");
-                        console.log(num1,num2,num3)
+                        console.log(num1)
             
                         try {
                             const parsedInput = JSON.parse(num1);
                                 console.log(parsedInput)
-                            if (Array.isArray(parsedInput) &&  (/^[A-Za-z]+$/.test(num2)) && (/^[A-Za-z]+$/.test(num3))){
-                                // parsedInput.length=0
-                                parsedInput.unshift(num2,num3)
-
-                                result.innerHTML = `Array is[${parsedInput}]`;
+                            if (Array.isArray(parsedInput)){
+                               let output= parsedInput[Math.floor(Math.random()*parsedInput.length)]
+                                result.innerHTML = `Random element from an Array is ${output}`;
                             } else {
                                 result.innerHTML = "No, it's not an array.";
                             }
                         } catch (e) {
-                            result.innerHTML = "No, it's not an array.";
+                            result.innerHTML = "Not an array.";
                         }
                 }
         </script>
@@ -67,6 +60,7 @@
 </body>
 
 </html>
+
 
 
 

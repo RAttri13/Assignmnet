@@ -1,3 +1,5 @@
+
+
 <html lang="en">
 
 <head>
@@ -12,121 +14,39 @@
     <title >Lets Pay With JS</title>
 
 </head>
-<body id="bodyContainer">
+<body id="bodyContainer" class="bg-lightTheme">
 
-        <div id="sectionsContainer" class="d-flex flex-row g-2 opacityHam ">
-            <div class="d-flex flex-column align-items-center  rounded-start bg-warning-subtle w-75 gap-3 overflow-scroll border border-success p-4  mb-2 border-opacity-25">
-                <div id="leftSectionContainer" class="d-flex flex-column gap-3 align-items-center w-75">
-                        <input placeholder="type a word" type="text" id="num1" class="px-3 py-1 rounded w-100"/>
-                        <button onclick="countVowel()" id="outputBtn" class="rounded p-2 w-100">Count Vowels</button>
-                </div>
+    <div id="sectionsContainer" class="d-flex flex-column g-2 opacityHam ">
+     <div id="sectionsSubContainer" class="d-flex flex-row g-2 opacityHam ">
+        <div id="UICont" class="w-100 d-flex flex-column align-items-center  rounded-start bg-white w-75 gap-3 overflow-scroll border border-success p-4  mb-2 border-opacity-25 bg-white">
+            <div id="displayUIContainer" class="bg-lightTheme p-3  h-100 d-flex flex-column gap-3 align-items-center w-75 rounded-3">
+                <button onclick="dateNumber()" id="outputBtn" class="rounded p-2 w-100">Get Time</button>
             </div>
-        </div>
-     
-        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-        <script src="../index.js"></script>
-        <!-- <script src="./Components/1InputField.js"></script> -->
+            
+        </div>  
         
-        <script>
- 
-        function countVowel() {
-            const num1 = document.getElementById("num1").value;
-            const result = document.getElementById("result");
+      </div>
+    </div>
 
-            if  (/^.*[A-Za-z]+$/.test(num1)){
-                result.innerHTML = ` ${vowel(num1)} Vowel `;
-                    result.style.display="flex"        
-            }else alert("Enter A Valid String")
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="../index.1.js"></script>
+    <script src="./Components/2InputField.js"></script>
+    
+    <script>
+ 
+ function dateNumber() {
+            const result = document.getElementById("result");
+            result.innerHTML = `time in ms: ${typeDate()[0]} \n\ type is:  ${typeDate()[1]}`;
 
         }
      
-        function vowel(a) {
-            let count=0;
-            b=a.split("");
-            for(i=0;i<b.length;i++){
-                if((b[i] == "a")||(b[i] == "e")||(b[i] == "i")||(b[i] == "o")||(b[i]=="u")){
-                    count =count+1;
-                }
-            }
-           return(count) 
+        function typeDate() {
+            let date=new Date()
+            let type=date.getTime()
+            console.log(type,typeof(type))
+            return [type,typeof(type)]
         }
-////////////////// compilation////////////
-class Printer {
-  print() {
-    console.log("Printing without parameters");
-  }
-
-  print(message) {
-    console.log("Printing message: " + message);
-  }
-
-  print(message, times) {
-    for (let i = 0; i < times; i++) {
-      console.log(message);
-    }
-  }
-}
-
-const printer = new Printer();
-printer.print();           
-printer.print("Hello!");   
-printer.print("Hello!", 3);
-
-/////////////////////////// run time ////////////////////////////
-class Shape {
-  area() {
-    return 0; 
-  }
-}
-
-// Circle subclass
-class Circle extends Shape {
-  constructor(radius) {
-    super();
-    this.radius = radius;
-  }
-
-  area() {
-    return Math.PI * this.radius * this.radius; 
-  }
-}
-
-// Rectangle subclass
-class Rectangle extends Shape {
-  constructor(width, height) {
-    super();
-    this.width = width;
-    this.height = height;
-  }
-
-  area() {
-    return this.width * this.height; 
-  }
-}
-
-// Triangle subclass
-class Triangle extends Shape {
-  constructor(base, height) {
-    super();
-    this.base = base;
-    this.height = height;
-  }
-
-  area() {
-    return 0.5 * this.base * this.height; 
-  }
-}
-
-const shapes = [
-  new Circle(5),
-  new Rectangle(4, 6),
-  new Triangle(4, 5)
-];
-
-shapes.forEach(shape => {
-  console.log(`Area: ${shape.area()}`); 
-});
 
     </script>
 

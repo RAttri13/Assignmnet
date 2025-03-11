@@ -16,11 +16,11 @@
 
         <div id="sectionsContainer" class="d-flex flex-column g-2 opacityHam ">
          <div id="sectionsSubContainer" class="d-flex flex-row g-2 opacityHam ">
-            <div id="UICont" class="w-100 d-none d-flex flex-column align-items-center  rounded-start bg-white w-75 gap-3 overflow-scroll border border-success p-4  mb-2 border-opacity-25 bg-white">
+            <div id="UICont" class="w-100 d-flex flex-column align-items-center  rounded-start bg-white w-75 gap-3 overflow-scroll border border-success p-4  mb-2 border-opacity-25 bg-white">
                 <div id="displayUIContainer" class="bg-lightTheme p-3  h-100 d-flex flex-column gap-3 align-items-center w-75 rounded-3">
-                    <input placeholder="type a word" type="text" id="num1" class="px-3 py-1 rounded w-100"/>
-                    <input placeholder="letter you want to replace" type="text" id="num2" class="px-3 py-1 rounded w-100"/>
-                    <button onclick="handlesReplace()" id="outputBtn" class="rounded p-2 w-100">Replace</button>
+                    <input placeholder="string" type="text" id="num1" class="px-3 py-1 rounded w-100"/>
+                    <input placeholder="string" type="text" id="num2" class="px-3 py-1 rounded w-100"/>
+                    <button onclick="compareStrings()" id="outputBtn" class="rounded p-2 w-100">compare</button>
                   </div>
             </div>
           </div>
@@ -33,23 +33,24 @@
         
         <script>
  
+ function compareStrings() {
+            // Get the values of the input fields
+            const str1 = document.getElementById('num1').value;
+            const str2 = document.getElementById('num2').value;
 
-        function handlesReplace() {
-            const num1 = document.getElementById("num1").value;
-            const num2 = document.getElementById("num2").value;
-            const result = document.getElementById("result");
+            // Validate if both fields are filled
+            if (str1 === "" || str2 === "") {
+                document.getElementById('result').innerText = "Please enter both strings.";
+                return;
+            }
 
-         if  ((/^.*[A-Za-z]+$/.test(num1)) &&(/^.*[A-Za-z]+$/.test(num2))){
-            result.innerHTML = 
-            `${replace(num1,num2)}`;
-          }else alert("Enter A Valid Character")
-
+            // Compare the two strings
+            if (str1 === str2) {
+                document.getElementById('result').innerText = "The strings are identical.";
+            } else {
+                document.getElementById('result').innerText = "The strings are different.";
+            }
         }
-     
-        function replace(a,b) {
-        return a.toLowerCase()==b.toLowerCase()? true :false
-        }
-
 
     </script>
 

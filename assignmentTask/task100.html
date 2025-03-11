@@ -1,3 +1,5 @@
+
+
 <html lang="en">
 
 <head>
@@ -12,48 +14,82 @@
     <title >Lets Pay With JS</title>
 
 </head>
-<body id="bodyContainer">
+<body id="bodyContainer" class="bg-lightTheme">
 
-        <div id="sectionsContainer" class="d-flex flex-row g-2 opacityHam ">
-            <div class="d-flex flex-column align-items-center  rounded-start bg-warning-subtle w-75 gap-3 overflow-scroll border border-success p-4  mb-2 border-opacity-25">
-                <div id="leftSectionContainer" class="d-flex flex-column gap-3 align-items-center w-75">
-                        <input placeholder="type a word" type="text" id="num1" class="px-3 py-1 rounded w-100"/>
-                        <button onclick="countVowel()" id="outputBtn" class="rounded p-2 w-100">Count Vowels</button>
-                </div>
+    <div id="sectionsContainer" class="d-flex flex-column g-2 opacityHam ">
+     <div id="sectionsSubContainer" class="d-flex flex-row g-2 opacityHam ">
+        <div id="UICont" class="w-100 d-flex flex-column align-items-center  rounded-start bg-white w-75 gap-3 overflow-scroll border border-success p-4  mb-2 border-opacity-25 bg-white">
+            <div id="displayUIContainer" class="bg-lightTheme p-3  h-100 d-flex flex-column gap-3 align-items-center w-75 rounded-3">
+                <input placeholder="type a number" type="number" id="num1" class="px-3 py-1 rounded w-100"/>
+                <input placeholder="type a number" type="number" id="num2" class="px-3 py-1 rounded w-100"/>
+                <input placeholder="type a number" type="text" id="num3" class="px-3 py-1 rounded w-100">
+                <button onclick="executeFunction()" id="outputBtn" class="rounded p-2 w-100">perform</button>
             </div>
-        </div>
-     
-        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-        <script src="../index.js"></script>
-        <!-- <script src="./Components/1InputField.js"></script> -->
+            
+        </div>  
         
-        <script>
- 
-        function countVowel() {
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="../index.1.js"></script>
+    
+    <script>
+        function executeFunction() {
             const num1 = document.getElementById("num1").value;
-            const result = document.getElementById("result");
-
-            if  (/^.*[A-Za-z]+$/.test(num1)){
-                result.innerHTML = ` ${vowel(num1)} Vowel `;
-                    result.style.display="flex"        
-            }else alert("Enter A Valid String")
-
-        }
-     
-        function vowel(a) {
-            let count=0;
-            b=a.split("");
-            for(i=0;i<b.length;i++){
-                if((b[i] == "a")||(b[i] == "e")||(b[i] == "i")||(b[i] == "o")||(b[i]=="u")){
-                    count =count+1;
-                }
+            const num2 = document.getElementById("num2").value;
+            const num3 = document.getElementById("num3").value.toLowerCase();
+            const outputBtn = document.getElementById("outputBtn");
+            // outputBtn.textContent=""
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers!")
+                document.getElementById("result").innerText = "Please enter valid numbers!";
+                return;
             }
-           return(count) 
+
+            let result;
+            if (num3 == "add" || num3 == "+") {
+                result = add(num1, num2);
+                outputBtn.textContent="Add"
+            }else if (num3 == "sub" || num3 == "-") {
+                result = sub(num1, num2);
+                outputBtn.textContent="Subtract"
+            }else if (num3 == "multiply" || num3 == "*") {
+                result = multi(num1, num2);
+                outputBtn.textContent="multiply"
+
+            }else if (num3 == "divide" || num3 == "/") {
+                result = divide(num1, num2);
+                outputBtn.textContent="divide"
+            }else {
+                result = "Invalid operation";
+            }
+
+            document.getElementById("result").innerText = `Result: ${result}`;
         }
 
+        function add(a, b) {
+            console.log(Number(a) + Number(b));
+            return Number(a) + Number(b);
+        }
 
+        function sub(a, b) {
+            console.log(Number(a) - Number(b));
+            return Number(a) - Number(b);
+        }
+
+        function multi(a, b) {
+            console.log(Number(a)* Number(b));
+            return Number(a)* Number(b);
+        }
+
+        function divide(a, b) {
+            console.log(Number(a)/ Number(b));
+            return Number(a)/ Number(b);
+        }
     </script>
+
 
 </body>
 

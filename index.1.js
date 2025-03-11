@@ -1,4 +1,3 @@
-
 const tasks =
   [{
     "href": "./task1.html",
@@ -664,7 +663,6 @@ else {
   outerDivMainHeading.className = "d-flex gap-4 opacityHam"
 
 
-  // bodyContainer.prepend(outerDivMainHeading);
   bodyContainer.prepend(hamburger);
 
   ///////////////////////////////////////////////////////////////         HEADER         /////////////////////////////////////////////////////////////////////
@@ -819,7 +817,7 @@ ${tasks[taskIndex].explain}`;
   imgResultContainer.id = "imgResultContainer"
   const imgResultHeadingContainer = document.createElement("div")
   imgResultHeadingContainer.className = "d-flex gap-3 justify-content-between"
-  imgResultContainer.className = "code_img text-nowrap overflow-scroll rounded-end w-100 border-2 bg-white p-4 mb-2 border-opacity-25";
+  imgResultContainer.className = "d-none code_img text-nowrap overflow-scroll rounded-end w-100 border-2 bg-white p-4 mb-2 border-opacity-25";
 
   const headerimgResultContainer = document.createElement("div")
   headerimgResultContainer.className = "mx-2 text-nowrap d-flex text-center align-items-center justify-content-between";
