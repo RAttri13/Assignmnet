@@ -9,619 +9,619 @@ const tasks =
     "href": "./task2.html",
     "text": "Add Two Numbers",
     "explain": "This task involves adding two numbers together and displaying the result. It introduces basic arithmetic operations in programming.",
-    "example": `a = 5\nb = 10\nsum = a + b\nprint(sum)  # Output: 15`
+    "example": `a = 5\n\b = 10\n\sum = a + b\n\print(sum)  # Output: 15`
   },
   {
     "href": "./task3.html",
     "text": "Find the Square Root",
     "explain": "This task demonstrates how to calculate the square root of a number. The square root of a number is a value that, when multiplied by itself, gives the original number.",
-    "example": `import math\nnum = 16\nresult = math.sqrt(num)\nprint(result)  # Output: 4.0`
+    "example": `import math\n\num = 16\n\result = math.sqrt(num)\n\print(result)  # Output: 4.0`
   },
   {
     "href": "./task4.html",
     "text": "Calculate the Area of a Triangle",
     "explain": "This task involves calculating the area of a triangle using the formula: Area = 1/2 * base * height.",
-    "example": `base = 5\nheight = 10\narea = 0.5 * base * height\nprint(area)  # Output: 25`
+    "example": `base = 5\n\height = 10\n\area = 0.5 * base * height\n\print(area)  # Output: 25`
   },
   {
     "href": "./task5.html",
     "text": "Swap Two Variables",
     "explain": "Swapping two variables means exchanging their values. This operation is fundamental in many algorithms and often used in sorting operations.",
-    "example": `a = 10\nb = 20\na, b = b, a\nprint(a, b)  # Output: 20 10`
+    "example": `a = 10\n\b = 20\n\a, b = b, a\n\print(a, b)  # Output: 20 10`
   },
   {
     "href": "./task6.html",
     "text": "Solve Quadratic Equation",
     "explain": "A quadratic equation is a second-degree polynomial equation in the form ax² + bx + c = 0. The solutions are found using the quadratic formula: x = (-b ± √(b² - 4ac)) / 2a.",
-    "example": `import math\na = 1\nb = -3\nc = 2\ndiscriminant = b**2 - 4*a*c\nif discriminant > 0:\n    root1 = (-b + math.sqrt(discriminant)) / (2*a)\n    root2 = (-b - math.sqrt(discriminant)) / (2*a)\n    print(root1, root2)  # Output: 2.0 1.0`
+    "example": `import math\n\a = 1\n\b = -3\n\c = 2\n\discriminant = b**2 - 4*a*c\n\if discriminant > 0:\n\    root1 = (-b + math.sqrt(discriminant)) / (2*a)\n\    root2 = (-b - math.sqrt(discriminant)) / (2*a)\n\    print(root1, root2)  # Output: 2.0 1.0`
   },
   {
     "href": "./task7.html",
     "text": "Convert Kilometers to Miles",
     "explain": "This task converts a distance from kilometers to miles. The conversion factor is: 1 kilometer = 0.621371 miles.",
-    "example": `kilometers = 10\nmiles = kilometers * 0.621371\nprint(miles)  # Output: 6.21371`
+    "example": `kilometers = 10\n\miles = kilometers * 0.621371\n\print(miles)  # Output: 6.21371`
   },
   {
     "href": "./task8.html",
     "text": "Convert Celsius to Fahrenheit",
     "explain": "This task involves converting temperature from Celsius to Fahrenheit using the formula: F = (9/5) * C + 32.",
-    "example": `celsius = 25\nfahrenheit = (9/5) * celsius + 32\nprint(fahrenheit)  # Output: 77.0`
+    "example": `celsius = 25\n\fahrenheit = (9/5) * celsius + 32\n\print(fahrenheit)  # Output: 77.0`
   },
   {
     "href": "./task9.html",
     "text": "Generate a Random Number",
     "explain": "Generating a random number is useful in simulations, games, and randomness-based logic. Python has a built-in module called 'random' to generate random numbers.",
-    "example": `import random\nrand_num = random.randint(1, 100)\nprint(rand_num)  # Output: A random number between 1 and 100`
+    "example": `import random\n\rand_num = random.randint(1, 100)\n\print(rand_num)  # Output: A random number between 1 and 100`
   },
   {
     "href": "./task10.html",
     "text": "Check if a Number is Positive, Negative, or Zero",
     "explain": "This task involves checking the value of a number and determining whether it is positive, negative, or zero.",
-    "example": `num = -5\nif num > 0:\n    print("Positive")\nelif num < 0:\n    print("Negative")\nelse:\n    print("Zero")  # Output: Negative`
+    "example": `num = -5\n\if num > 0:\n\    print("Positive")\n\elif num < 0:\n\    print("Negative")\n\else:\n\    print("Zero")  # Output: Negative`
   },
   {
     "href": "./task11.html",
     "text": "Check if a Number is Odd or Even",
     "explain": "This task checks if a number is odd or even. A number is even if it is divisible by 2, and odd otherwise.",
-    "example": `num = 7\nif num % 2 == 0:\n    print("Even")\nelse:\n    print("Odd")  # Output: Odd`
+    "example": `num = 7\n\if num % 2 == 0:\n\    print("Even")\n\else:\n\    print("Odd")  # Output: Odd`
   },
   {
     "href": "./task12.html",
     "text": "Find the Largest Among Three Numbers",
     "explain": "This task involves finding the largest number out of three given numbers. The comparison can be made using conditional statements.",
-    "example": `a = 3\nb = 5\nc = 2\nlargest = max(a, b, c)\nprint(largest)  # Output: 5`
+    "example": `a = 3\n\b = 5\n\c = 2\n\largest = max(a, b, c)\n\print(largest)  # Output: 5`
   },
   {
     "href": "./task13.html",
     "text": "Check Prime Number",
     "explain": "A prime number is a number that has only two distinct positive divisors: 1 and itself. This task checks if a given number is prime.",
-    "example": `num = 7\nif num > 1:\n    for i in range(2, num):\n        if num % i == 0:\n            print("Not Prime")\n            break\n    else:\n        print("Prime")  # Output: Prime`
+    "example": `num = 7\n\if num > 1:\n\    for i in range(2, num):\n\        if num % i == 0:\n\            print("Not Prime")\n\            break\n\    else:\n\        print("Prime")  # Output: Prime`
   },
   {
     "href": "./task14.html",
     "text": "Print All Prime Numbers in an Interval",
     "explain": "This task prints all the prime numbers within a given interval by checking each number for primality.",
-    "example": `start = 10\nend = 30\nfor num in range(start, end + 1):\n    if num > 1:\n        for i in range(2, num):\n            if num % i == 0:\n                break\n        else:\n            print(num)  # Output: 11 13 17 19 23 29`
+    "example": `start = 10\n\end = 30\n\for num in range(start, end + 1):\n\    if num > 1:\n\        for i in range(2, num):\n\            if num % i == 0:\n\                break\n\        else:\n\            print(num)  # Output: 11 13 17 19 23 29`
   },
   {
     "href": "./task15.html",
     "text": "Find the Factorial of a Number",
     "explain": "The factorial of a number n (denoted as n!) is the product of all positive integers less than or equal to n. This task calculates the factorial of a given number.",
-    "example": `num = 5\nfactorial = 1\nfor i in range(1, num + 1):\n    factorial *= i\nprint(factorial)  # Output: 120`
+    "example": `num = 5\n\factorial = 1\n\for i in range(1, num + 1):\n\    factorial *= i\n\print(factorial)  # Output: 120`
   },
   {
     "href": "./task16.html",
     "text": "Display the Multiplication Table",
     "explain": "This task prints the multiplication table for a given number, which helps in understanding how multiplication works.",
-    "example": `num = 7\nfor i in range(1, 11):\n    print(f'{num} x {i} = {num * i}')  # Output: Prints multiplication table of 7`
+    "example": `num = 7\n\for i in range(1, 11):\n\    print(f'{num} x {i} = {num * i}')  # Output: Prints multiplication table of 7`
   },
   {
     "href": "./task17.html",
     "text": "Print the Fibonacci Sequence",
     "explain": "The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones. This task prints the first N terms of the Fibonacci sequence.",
-    "example": `terms = 10\nfib = [0, 1]\nfor i in range(2, terms):\n    fib.append(fib[i-1] + fib[i-2])\nprint(fib)  # Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]`
+    "example": `terms = 10\n\fib = [0, 1]\n\for i in range(2, terms):\n\    fib.append(fib[i-1] + fib[i-2])\n\print(fib)  # Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]`
   },
   {
     "href": "./task18.html",
     "text": "Check Armstrong Number",
     "explain": "An Armstrong number is a number that is equal to the sum of its own digits raised to the power of the number of digits. This task checks if a number is an Armstrong number.",
-    "example": `num = 153\nsum = 0\ntemp = num\nwhile temp > 0:\n    digit = temp % 10\n    sum += digit ** 3\n    temp //= 10\nif num == sum:\n    print("Armstrong Number")  # Output: Armstrong Number`
+    "example": `num = 153\n\sum = 0\n\temp = num\n\while temp > 0:\n\    digit = temp % 10\n\    sum += digit ** 3\n\    temp //= 10\n\if num == sum:\n\    print("Armstrong Number")  # Output: Armstrong Number`
   },
   {
     "href": "./task19.html",
     "text": "Find Armstrong Number in an Interval",
     "explain": "This task finds all Armstrong numbers in a given interval. It checks each number in the interval to see if it satisfies the Armstrong condition.",
-    "example": `start = 100\nend = 999\nfor num in range(start, end + 1):\n    sum = 0\n    temp = num\n    while temp > 0:\n        digit = temp % 10\n        sum += digit ** 3\n        temp //= 10\n    if num == sum:\n        print(num)  # Output: 153 370 371 407`
+    "example": `start = 100\n\end = 999\n\for num in range(start, end + 1):\n\    sum = 0\n\    temp = num\n\    while temp > 0:\n\        digit = temp % 10\n\        sum += digit ** 3\n\        temp //= 10\n\    if num == sum:\n\        print(num)  # Output: 153 370 371 407`
   },
   {
     "href": "./task20.html",
     "text": "Make a Simple Calculator",
     "explain": "A simple calculator performs basic arithmetic operations like addition, subtraction, multiplication, and division based on user input.",
-    "example": `a = 10\nb = 5\noperator = '+'\nif operator == '+':\n    result = a + b\nelif operator == '-':\n    result = a - b\nelif operator == '*':\n    result = a * b\nelif operator == '/':\n    result = a / b\nprint(result)  # Output: 15`
+    "example": `a = 10\n\b = 5\n\operator = '+'\n\if operator == '+':\n\    result = a + b\n\elif operator == '-':\n\    result = a - b\n\elif operator == '*':\n\    result = a * b\n\elif operator == '/':\n\    result = a / b\n\print(result)  # Output: 15`
   },
   {
     "href": "./task21.html",
     "text": "Find the Sum of Natural Numbers",
     "explain": "This task calculates the sum of the first N natural numbers. The formula to calculate this is: Sum = n(n + 1) / 2.",
-    "example": `n = 10\nsum = n * (n + 1) // 2\nprint(sum)  # Output: 55`
+    "example": `n = 10\n\sum = n * (n + 1) // 2\n\print(sum)  # Output: 55`
   },
   {
     "href": "./task22.html",
     "text": "Check if the Numbers Have Same Last Digit",
     "explain": "This task checks whether two numbers end with the same digit. It compares the remainder when each number is divided by 10.",
-    "example": `a = 25\nb = 35\nif a % 10 == b % 10:\n    print("Same last digit")\nelse:\n    print("Different last digits")  # Output: Same last digit`
+    "example": `a = 25\n\b = 35\n\if a % 10 == b % 10:\n\    print("Same last digit")\n\else:\n\    print("Different last digits")  # Output: Same last digit`
   },
   {
     "href": "./task23.html",
     "text": "Find HCF or GCD",
     "explain": "The Highest Common Factor (HCF) or Greatest Common Divisor (GCD) of two numbers is the largest number that divides both numbers.",
-    "example": `import math\na = 56\nb = 98\nhcf = math.gcd(a, b)\nprint(hcf)  # Output: 14`
+    "example": `import math\n\a = 56\n\b = 98\n\hcf = math.gcd(a, b)\n\print(hcf)  # Output: 14`
   },
   {
     "href": "./task24.html",
     "text": "Find LCM",
     "explain": "The Least Common Multiple (LCM) of two numbers is the smallest number that is a multiple of both numbers.",
-    "example": `def lcm(a, b):\n    return abs(a * b) // math.gcd(a, b)\n\nlcm_value = lcm(12, 18)\nprint(lcm_value)  # Output: 36`
+    "example": `def lcm(a, b):\n\    return abs(a * b) // math.gcd(a, b)\n\\n\lcm_value = lcm(12, 18)\n\print(lcm_value)  # Output: 36`
   },
   {
     "href": "./task25.html",
     "text": "Find the Factors of a Number",
     "explain": "This task finds all the factors of a given number. A factor is a number that divides another number completely.",
-    "example": `num = 28\nfactors = []\nfor i in range(1, num + 1):\n    if num % i == 0:\n        factors.append(i)\nprint(factors)  # Output: [1, 2, 4, 7, 14, 28]`
+    "example": `num = 28\n\factors = []\n\for i in range(1, num + 1):\n\    if num % i == 0:\n\        factors.append(i)\n\print(factors)  # Output: [1, 2, 4, 7, 14, 28]`
   },
   {
     "href": "./task26.html",
     "text": "Find Sum of Natural Numbers Using Recursion",
     "explain": "This task demonstrates how to find the sum of the first N natural numbers using recursion, where a function calls itself to solve the problem.",
-    "example": `def sum_natural(n):\n    if n == 0:\n        return 0\n    else:\n        return n + sum_natural(n - 1)\n\nprint(sum_natural(5))  # Output: 15`
+    "example": `def sum_natural(n):\n\    if n == 0:\n\        return 0\n\    else:\n\        return n + sum_natural(n - 1)\n\\n\print(sum_natural(5))  # Output: 15`
   },
   {
     "href": "./task27.html",
     "text": "Guess a Random Number",
     "explain": "This task simulates a simple game where the user has to guess a randomly generated number.",
-    "example": `import random\nnumber_to_guess = random.randint(1, 10)\nguess = int(input("Guess the number: "))\nif guess == number_to_guess:\n    print("Correct!")\nelse:\n    print("Try again!")`
+    "example": `import random\n\number_to_guess = random.randint(1, 10)\n\guess = int(input("Guess the number: "))\n\if guess == number_to_guess:\n\    print("Correct!")\n\else:\n\    print("Try again!")`
   },
   {
     "href": "./task28.html",
     "text": "Shuffle Deck of Cards",
     "explain": "This task simulates shuffling a deck of cards. You can represent a deck as a list of cards and shuffle it randomly.",
-    "example": `import random\ncards = ['2H', '3H', '4H', '5H', '6H', '7H', '8H', '9H', '10H', 'JH', 'QH', 'KH', 'AH']\nrandom.shuffle(cards)\nprint(cards)`
+    "example": `import random\n\cards = ['2H', '3H', '4H', '5H', '6H', '7H', '8H', '9H', '10H', 'JH', 'QH', 'KH', 'AH']\n\random.shuffle(cards)\n\print(cards)`
   },
   {
     "href": "./task29.html",
     "text": "Display Fibonacci Sequence Using Recursion",
     "explain": "This task shows how to display the Fibonacci sequence using recursion, where the function calls itself to generate the next value in the sequence.",
-    "example": `def fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)\n\nfor i in range(10):\n    print(fibonacci(i))  # Output: 0 1 1 2 3 5 8 13 21 34`
+    "example": `def fibonacci(n):\n\    if n <= 1:\n\        return n\n\    else:\n\        return fibonacci(n-1) + fibonacci(n-2)\n\\n\for i in range(10):\n\    print(fibonacci(i))  # Output: 0 1 1 2 3 5 8 13 21 34`
   },
   {
     "href": "./task30.html",
     "text": "Find Factorial of Number Using Recursion",
     "explain": "This task calculates the factorial of a number using recursion. A factorial is the product of all positive integers up to that number.",
-    "example": `def factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    else:\n        return n * factorial(n - 1)\n\nprint(factorial(5))  # Output: 120`
+    "example": `def factorial(n):\n\    if n == 0 or n == 1:\n\        return 1\n\    else:\n\        return n * factorial(n - 1)\n\\n\print(factorial(5))  # Output: 120`
   },
   {
     "href": "./task31.html",
     "text": "Convert Decimal to Binary",
     "explain": "This task converts a decimal number (base 10) to its binary representation (base 2). The conversion can be done using built-in Python functions.",
-    "example": `decimal = 12\nbinary = bin(decimal)[2:]\nprint(binary)  # Output: '1100'`
+    "example": `decimal = 12\n\binary = bin(decimal)[2:]\n\print(binary)  # Output: '1100'`
   },
   {
     "href": "./task32.html",
     "text": "Find ASCII Value of Character",
     "explain": "This task demonstrates how to get the ASCII value of a character. The ASCII value is an integer representation of a character.",
-    "example": `char = 'A'\nascii_value = ord(char)\nprint(ascii_value)  # Output: 65`
+    "example": `char = 'A'\n\ascii_value = ord(char)\n\print(ascii_value)  # Output: 65`
   },
   {
     "href": "./task33.html",
     "text": "Check Whether a String is Palindrome or Not",
     "explain": "A palindrome is a word or phrase that reads the same backward as forward. This task checks whether a given string is a palindrome.",
-    "example": `s = "madam"\nif s == s[::-1]:\n    print("Palindrome")\nelse:\n    print("Not Palindrome")  # Output: Palindrome`
+    "example": `s = "madam"\n\if s == s[::-1]:\n\    print("Palindrome")\n\else:\n\    print("Not Palindrome")  # Output: Palindrome`
   },
   {
     "href": "./task34.html",
     "text": "Sort Words in Alphabetical Order",
     "explain": "This task sorts the words of a string in alphabetical order. The string is first split into words, and then sorted using Python’s built-in functions.",
-    "example": `s = "banana apple cherry"\nwords = s.split()\nwords.sort()\nprint(" ".join(words))  # Output: apple banana cherry`
+    "example": `s = "banana apple cherry"\n\words = s.split()\n\words.sort()\n\print(" ".join(words))  # Output: apple banana cherry`
   },
   {
     "href": "./task35.html",
     "text": "Replace Characters of a String",
     "explain": "This task demonstrates how to replace characters in a string. The `replace()` method is used to replace one substring with another.",
-    "example": `s = "hello"\ns = s.replace("e", "a")\nprint(s)  # Output: hallo`
+    "example": `s = "hello"\n\s = s.replace("e", "a")\n\print(s)  # Output: hallo`
   },
   {
     "href": "./task36.html",
     "text": "Reverse a String",
     "explain": "This task involves reversing a given string. You can reverse a string in Python using slicing.",
-    "example": `s = "hello"\nreversed_s = s[::-1]\nprint(reversed_s)  # Output: olleh`
+    "example": `s = "hello"\n\reversed_s = s[::-1]\n\print(reversed_s)  # Output: olleh`
   },
   {
     "href": "./task37.html",
     "text": "Create Objects in Different Ways",
     "explain": "This task demonstrates creating objects in different ways, like using a constructor or directly assigning values.",
-    "example": `# Using constructor\nclass Person:\n    def __init__(self, name):\n        self.name = name\nperson = Person('Alice')\n\n# Using dictionary\nperson_dict = {'name': 'Alice'}`
+    "example": `# Using constructor\n\class Person:\n\    def __init__(self, name):\n\        self.name = name\n\person = Person('Alice')\n\\n\# Using dictionary\n\person_dict = {'name': 'Alice'}`
   },
   {
     "href": "./task38.html",
     "text": "Number of Occurrences of a Character in the String",
     "explain": "This task counts the number of times a character occurs in a string. You can use the `count()` method for this.",
-    "example": `s = "hello world"\ncount = s.count("o")\nprint(count)  # Output: 2`
+    "example": `s = "hello world"\n\count = s.count("o")\n\print(count)  # Output: 2`
   },
   {
     "href": "./task39.html",
     "text": "Convert the First Letter of a String into UpperCase",
     "explain": "This task converts the first letter of a string to uppercase. The `capitalize()` method can be used.",
-    "example": `s = "hello"\ncapitalized = s.capitalize()\nprint(capitalized)  # Output: Hello`
+    "example": `s = "hello"\n\capitalized = s.capitalize()\n\print(capitalized)  # Output: Hello`
   },
   {
     "href": "./task40.html",
     "text": "Count the Number of Vowels in a String",
     "explain": "This task counts how many vowels (a, e, i, o, u) are in a string.",
-    "example": `s = "hello"\nvowels = "aeiou"\ncount = sum(1 for char in s if char in vowels)\nprint(count)  # Output: 2`
+    "example": `s = "hello"\n\vowels = "aeiou"\n\count = sum(1 for char in s if char in vowels)\n\print(count)  # Output: 2`
   },
   {
     "href": "./task41.html",
     "text": "Remove a Property from an Object",
     "explain": "This task demonstrates how to remove a property from an object using the `delete` operator.",
-    "example": `const obj = { name: 'Alice', age: 25 };\ndelete obj.age;\nconsole.log(obj);  // Output: { name: 'Alice' }`
+    "example": `const obj = { name: 'Alice', age: 25 };\n\delete obj.age;\n\console.log(obj);  // Output: { name: 'Alice' }`
   },
   {
     "href": "./task42.html",
     "text": "String Starts and Ends With Certain Characters",
     "explain": "This task checks if a string starts or ends with specific characters using the `startsWith()` and `endsWith()` methods.",
-    "example": `let str = "hello world";\nconsole.log(str.startsWith("hello"));  // Output: true\nconsole.log(str.endsWith("world"));  // Output: true`
+    "example": `let str = "hello world";\n\console.log(str.startsWith("hello"));  // Output: true\n\console.log(str.endsWith("world"));  // Output: true`
   },
   {
     "href": "./task43.html",
     "text": "Check if a Key Exists in an Object",
     "explain": "This task checks if a specified key exists in an object using the `in` operator or `hasOwnProperty()` method.",
-    "example": `const obj = { name: 'Alice', age: 25 };\nconsole.log('name' in obj);  // Output: true\nconsole.log(obj.hasOwnProperty('age'));  // Output: true`
+    "example": `const obj = { name: 'Alice', age: 25 };\n\console.log('name' in obj);  // Output: true\n\console.log(obj.hasOwnProperty('age'));  // Output: true`
   },
   {
     "href": "./task44.html",
     "text": "Clone a JS Object",
     "explain": "This task demonstrates how to clone a JavaScript object. You can do this using methods like `Object.assign()` or the spread operator.",
-    "example": `const original = { name: 'Alice', age: 25 };\nconst clone = { ...original };\nconsole.log(clone);  // Output: { name: 'Alice', age: 25 }`
+    "example": `const original = { name: 'Alice', age: 25 };\n\const clone = { ...original };\n\console.log(clone);  // Output: { name: 'Alice', age: 25 }`
   },
   {
     "href": "./task45.html",
     "text": "Loop Through an Object",
     "explain": "This task demonstrates how to loop through the properties of an object using `for...in` or `Object.keys()`.",
-    "example": `const obj = { name: 'Alice', age: 25 };\nfor (let key in obj) {\n    console.log(key, obj[key]);\n}\n// Output: name Alice\n// Output: age 25`
+    "example": `const obj = { name: 'Alice', age: 25 };\n\for (let key in obj) {\n\    console.log(key, obj[key]);\n\}\n\// Output: name Alice\n\// Output: age 25`
   },
   {
     "href": "./task46.html",
     "text": "Merge Property of Two Objects",
     "explain": "This task shows how to merge properties from two objects using `Object.assign()` or the spread operator.",
-    "example": `const obj1 = { name: 'Alice' };\nconst obj2 = { age: 25 };\nconst merged = { ...obj1, ...obj2 };\nconsole.log(merged);  // Output: { name: 'Alice', age: 25 }`
+    "example": `const obj1 = { name: 'Alice' };\n\const obj2 = { age: 25 };\n\const merged = { ...obj1, ...obj2 };\n\console.log(merged);  // Output: { name: 'Alice', age: 25 }`
   },
   {
     "href": "./task47.html",
     "text": "Count the Number of Keys/Properties in an Object",
     "explain": "This task counts the number of keys or properties in an object using `Object.keys()`.",
-    "example": `const obj = { name: 'Alice', age: 25 };\nconsole.log(Object.keys(obj).length);  // Output: 2`
+    "example": `const obj = { name: 'Alice', age: 25 };\n\console.log(Object.keys(obj).length);  // Output: 2`
   },
   {
     "href": "./task48.html",
     "text": "Add Key/Value Pair to an Object",
     "explain": "This task demonstrates how to add a new key-value pair to an existing object.",
-    "example": `const obj = { name: 'Alice' };\nobj.age = 25;\nconsole.log(obj);  // Output: { name: 'Alice', age: 25 }`
+    "example": `const obj = { name: 'Alice' };\n\obj.age = 25;\n\console.log(obj);  // Output: { name: 'Alice', age: 25 }`
   },
   {
     "href": "./task49.html",
     "text": "Generate a Random Number",
     "explain": "This task generates a random number between a specified range using `Math.random()`.",
-    "example": `const randomNumber = Math.floor(Math.random() * 100) + 1;\nconsole.log(randomNumber);  // Output: Random number between 1 and 100`
+    "example": `const randomNumber = Math.floor(Math.random() * 100) + 1;\n\console.log(randomNumber);  // Output: Random number between 1 and 100`
   },
   {
     "href": "./task50.html",
     "text": "Create Multiline Strings",
     "explain": "This task shows how to create multiline strings using template literals (backticks).",
-    "example": `const str = \`This is a multiline\nstring in JavaScript.\`;\nconsole.log(str);  // Output: This is a multiline\nstring in JavaScript.`
+    "example": `const str = \`This is a multiline\n\string in JavaScript.\`;\n\console.log(str);  // Output: This is a multiline\n\string in JavaScript.`
   },
   {
     "href": "./task51.html",
     "text": "Format Numbers as Currency Strings",
     "explain": "This task formats numbers as currency strings using the `toLocaleString()` method.",
-    "example": `const amount = 123456.789;\nconsole.log(amount.toLocaleString('en-US', { style: 'currency', currency: 'USD' }));  // Output: $123,456.79`
+    "example": `const amount = 123456.789;\n\console.log(amount.toLocaleString('en-US', { style: 'currency', currency: 'USD' }));  // Output: $123,456.79`
   },
   {
     "href": "./task52.html",
     "text": "Generate Random String",
     "explain": "This task generates a random string of a specified length using characters from a given set.",
-    "example": `const length = 8;\nconst chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';\nlet randomString = '';\nfor (let i = 0; i < length; i++) {\n    randomString += chars.charAt(Math.floor(Math.random() * chars.length));\n}\nconsole.log(randomString);`
+    "example": `const length = 8;\n\const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';\n\let randomString = '';\n\for (let i = 0; i < length; i++) {\n\    randomString += chars.charAt(Math.floor(Math.random() * chars.length));\n\}\n\console.log(randomString);`
   },
   {
     "href": "./task53.html",
     "text": "Check if a String Starts With Another String",
     "explain": "This task checks if a string starts with a specific substring using the `startsWith()` method.",
-    "example": `const str = "hello world";\nconsole.log(str.startsWith("hello"));  // Output: true`
+    "example": `const str = "hello world";\n\console.log(str.startsWith("hello"));  // Output: true`
   },
   {
     "href": "./task54.html",
     "text": "Trim a String",
     "explain": "This task removes whitespace from both ends of a string using the `trim()` method.",
-    "example": `const str = "   hello world   ";\nconsole.log(str.trim());  // Output: 'hello world'`
+    "example": `const str = "   hello world   ";\n\console.log(str.trim());  // Output: 'hello world'`
   },
   {
     "href": "./task55.html",
     "text": "Convert Objects to Strings",
     "explain": "This task converts an object to a string using `JSON.stringify()`.",
-    "example": `const obj = { name: 'Alice', age: 25 };\nconsole.log(JSON.stringify(obj));  // Output: '{"name":"Alice","age":25}'`
+    "example": `const obj = { name: 'Alice', age: 25 };\n\console.log(JSON.stringify(obj));  // Output: '{"name":"Alice","age":25}'`
   },
   {
     "href": "./task56.html",
     "text": "Check Whether a String Contains a Substring",
     "explain": "This task checks if a string contains a specified substring using the `includes()` method.",
-    "example": `const str = "hello world";\nconsole.log(str.includes("world"));  // Output: true`
+    "example": `const str = "hello world";\n\console.log(str.includes("world"));  // Output: true`
   },
   {
     "href": "./task57.html",
     "text": "Compare Two Strings",
     "explain": "This task compares two strings using the `localeCompare()` method or simple comparison.",
-    "example": `const str1 = "apple";\nconst str2 = "banana";\nconsole.log(str1.localeCompare(str2));  // Output: -1 (apple is less than banana)`
+    "example": `const str1 = "apple";\n\const str2 = "banana";\n\console.log(str1.localeCompare(str2));  // Output: -1 (apple is less than banana)`
   },
   {
     "href": "./task58.html",
     "text": "Encode a String to Base64",
     "explain": "This task encodes a string to Base64 format using the `btoa()` method.",
-    "example": `const str = "hello";\nconst encodedStr = btoa(str);\nconsole.log(encodedStr);  // Output: 'aGVsbG8='`
+    "example": `const str = "hello";\n\const encodedStr = btoa(str);\n\console.log(encodedStr);  // Output: 'aGVsbG8='`
   },
   {
     "href": "./task59.html",
     "text": "Replace all Instances of a Character in a String",
     "explain": "This task replaces all instances of a specific character in a string using the `replace()` method with a global regular expression.",
-    "example": `const str = "hello world";\nconst newStr = str.replace(/o/g, '0');\nconsole.log(newStr);  // Output: 'hell0 w0rld'`
+    "example": `const str = "hello world";\n\const newStr = str.replace(/o/g, '0');\n\console.log(newStr);  // Output: 'hell0 w0rld'`
   },
   {
     "href": "./task60.html",
     "text": "Replace All Line Breaks with",
     "explain": "This task replaces all line breaks in a string with another character or string using the `replace()` method.",
-    "example": `const str = "hello\nworld\nhow\nare\nyou";\nconst newStr = str.replace(/\n/g, ' ');\nconsole.log(newStr);  // Output: 'hello world how are you'`
+    "example": `const str = "hello\n\world\n\how\n\are\n\you";\n\const newStr = str.replace(/\n\/g, ' ');\n\console.log(newStr);  // Output: 'hello world how are you'`
   },
   {
     "href": "./task61.html",
     "text": "Display Date and Time",
     "explain": "This task demonstrates how to display the current date and time using the `Date()` object.",
-    "example": `const now = new Date();\nconsole.log(now);  // Output: current date and time`
+    "example": `const now = new Date();\n\console.log(now);  // Output: current date and time`
   },
   {
     "href": "./task62.html",
     "text": "Check Leap Year",
     "explain": "A leap year is a year that has one extra day added to it, making it 366 days long instead of the usual 365 days. This extra day is added to the month of February, which normally has 28 days, but in a leap year, it has 29 days.",
-    "example": `const year = 2024;\nconst isLeapYear = (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0));\nconsole.log(isLeapYear);  // Output: true`
+    "example": `const year = 2024;\n\const isLeapYear = (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0));\n\console.log(isLeapYear);  // Output: true`
   },
   {
     "href": "./task63.html",
     "text": "Format the Date",
     "explain": "This task demonstrates how to format the current date using `Date` methods like `getFullYear()`, `getMonth()`, and `getDate()`.",
-    "example": `const now = new Date();\nconst formattedDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate();\nconsole.log(formattedDate);  // Output: '2025-3-5'`
+    "example": `const now = new Date();\n\const formattedDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate();\n\console.log(formattedDate);  // Output: '2025-3-5'`
   },
   {
     "href": "./task64.html",
     "text": "Display Current Date",
     "explain": "This task demonstrates how to display the current date using `Date()` object.",
-    "example": `const currentDate = new Date();\nconsole.log(currentDate.toDateString());  // Output: current day of the week, month, day, year`
+    "example": `const currentDate = new Date();\n\console.log(currentDate.toDateString());  // Output: current day of the week, month, day, year`
   },
   {
     "href": "./task65.html",
     "text": "Compare The Value of Two Dates",
     "explain": "This task compares two dates to check if one is earlier, later, or equal to the other using `getTime()` method.",
-    "example": `const date1 = new Date(2025, 2, 5);\nconst date2 = new Date(2025, 2, 6);\nconsole.log(date1.getTime() < date2.getTime());  // Output: true`
+    "example": `const date1 = new Date(2025, 2, 5);\n\const date2 = new Date(2025, 2, 6);\n\console.log(date1.getTime() < date2.getTime());  // Output: true`
   },
   {
     "href": "./task66.html",
     "text": "Create Countdown Timer",
     "explain": "This task shows how to create a countdown timer that counts down from a specified time using `setInterval()`.",
-    "example": `let timeLeft = 10;\nconst countdown = setInterval(() => {\n    if (timeLeft <= 0) {\n        clearInterval(countdown);\n        console.log("Time's up!");\n    } else {\n        console.log(timeLeft);\n        timeLeft--;\n    }\n}, 1000);`
+    "example": `let timeLeft = 10;\n\const countdown = setInterval(() => {\n\    if (timeLeft <= 0) {\n\        clearInterval(countdown);\n\        console.log("Time's up!");\n\    } else {\n\        console.log(timeLeft);\n\        timeLeft--;\n\    }\n\}, 1000);`
   },
   {
     "href": "./task67.html",
     "text": "Remove Specific Item From an Array",
     "explain": "This task removes a specific item from an array using `splice()` or `filter()` methods.",
-    "example": `let arr = [1, 2, 3, 4, 5];\narr.splice(arr.indexOf(3), 1);\nconsole.log(arr);  // Output: [1, 2, 4, 5]`
+    "example": `let arr = [1, 2, 3, 4, 5];\n\arr.splice(arr.indexOf(3), 1);\n\console.log(arr);  // Output: [1, 2, 4, 5]`
   },
   {
     "href": "./task68.html",
     "text": "Check if An Array Contains a Specified Value",
     "explain": "This task checks if an array contains a specified value using the `includes()` method.",
-    "example": `const arr = [1, 2, 3, 4, 5];\nconsole.log(arr.includes(3));  // Output: true`
+    "example": `const arr = [1, 2, 3, 4, 5];\n\console.log(arr.includes(3));  // Output: true`
   },
   {
     "href": "./task69.html",
     "text": "Insert Item in an Array",
     "explain": "This task demonstrates how to insert an item at a specific index in an array using `splice()`.",
-    "example": `const arr = [1, 2, 3, 4, 5];\narr.splice(2, 0, 'newItem');\nconsole.log(arr);  // Output: [1, 2, 'newItem', 3, 4, 5]`
+    "example": `const arr = [1, 2, 3, 4, 5];\n\arr.splice(2, 0, 'newItem');\n\console.log(arr);  // Output: [1, 2, 'newItem', 3, 4, 5]`
   },
   {
     "href": "./task70.html",
     "text": "Append an Object to An Array",
     "explain": "This task shows how to append an object to an array using `push()`.",
-    "example": `const arr = [1, 2, 3];\nconst obj = { name: 'Alice', age: 25 };\narr.push(obj);\nconsole.log(arr);  // Output: [1, 2, 3, { name: 'Alice', age: 25 }]`
+    "example": `const arr = [1, 2, 3];\n\const obj = { name: 'Alice', age: 25 };\n\arr.push(obj);\n\console.log(arr);  // Output: [1, 2, 3, { name: 'Alice', age: 25 }]`
   },
   {
     "href": "./task71.html",
     "text": "Check if An Object is An Array",
     "explain": "This task demonstrates how to check if an object is an array using `Array.isArray()`.",
-    "example": `const arr = [1, 2, 3];\nconsole.log(Array.isArray(arr));  // Output: true\nconst obj = { name: 'Alice' };\nconsole.log(Array.isArray(obj));  // Output: false`
+    "example": `const arr = [1, 2, 3];\n\console.log(Array.isArray(arr));  // Output: true\n\const obj = { name: 'Alice' };\n\console.log(Array.isArray(obj));  // Output: false`
   },
   {
     "href": "./task72.html",
     "text": "Empty an Array",
     "explain": "This task shows how to empty an array using different methods like setting the length to zero.",
-    "example": `let arr = [1, 2, 3];\narr.length = 0;\nconsole.log(arr);  // Output: []`
+    "example": `let arr = [1, 2, 3];\n\arr.length = 0;\n\console.log(arr);  // Output: []`
   },
   {
     "href": "./task73.html",
     "text": "Add Element to Start of an Array",
     "explain": "This task demonstrates how to add an element to the start of an array using `unshift()`.",
-    "example": `const arr = [2, 3, 4];\narr.unshift(1);\nconsole.log(arr);  // Output: [1, 2, 3, 4]`
+    "example": `const arr = [2, 3, 4];\n\arr.unshift(1);\n\console.log(arr);  // Output: [1, 2, 3, 4]`
   },
   {
     "href": "./task74.html",
     "text": "Remove Duplicates From Array",
     "explain": "This task demonstrates how to remove duplicates from an array using `Set` or `filter()` method.",
-    "example": `const arr = [1, 2, 2, 3, 4, 4];\nconst uniqueArr = [...new Set(arr)];\nconsole.log(uniqueArr);  // Output: [1, 2, 3, 4]`
+    "example": `const arr = [1, 2, 2, 3, 4, 4];\n\const uniqueArr = [...new Set(arr)];\n\console.log(uniqueArr);  // Output: [1, 2, 3, 4]`
   },
   {
     "href": "./task75.html",
     "text": "Merge Two Arrays and Remove Duplicate Items",
     "explain": "This task demonstrates how to merge two arrays and remove duplicates using `Set`.",
-    "example": `const arr1 = [1, 2, 3];\nconst arr2 = [2, 3, 4];\nconst merged = [...new Set([...arr1, ...arr2])];\nconsole.log(merged);  // Output: [1, 2, 3, 4]`
+    "example": `const arr1 = [1, 2, 3];\n\const arr2 = [2, 3, 4];\n\const merged = [...new Set([...arr1, ...arr2])];\n\console.log(merged);  // Output: [1, 2, 3, 4]`
   },
   {
     "href": "./task76.html",
     "text": "Sort Array of Objects by Property Values",
     "explain": "This task shows how to sort an array of objects by a specific property using `sort()` method.",
-    "example": `const arr = [{ name: 'Alice', age: 25 }, { name: 'Bob', age: 22 }, { name: 'Charlie', age: 30 }];\narr.sort((a, b) => a.age - b.age);\nconsole.log(arr);  // Output: [{ name: 'Bob', age: 22 }, { name: 'Alice', age: 25 }, { name: 'Charlie', age: 30 }]`
+    "example": `const arr = [{ name: 'Alice', age: 25 }, { name: 'Bob', age: 22 }, { name: 'Charlie', age: 30 }];\n\arr.sort((a, b) => a.age - b.age);\n\console.log(arr);  // Output: [{ name: 'Bob', age: 22 }, { name: 'Alice', age: 25 }, { name: 'Charlie', age: 30 }]`
   },
   {
     "href": "./task77.html",
     "text": "Create Two Dimensional Array",
     "explain": "This task demonstrates how to create and initialize a two-dimensional array in JavaScript.",
-    "example": `const arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];\nconsole.log(arr);  // Output: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]`
+    "example": `const arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];\n\console.log(arr);  // Output: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]`
   },
   {
     "href": "./task78.html",
     "text": "Extract Given Property Values from Objects as Array",
     "explain": "This task shows how to extract specific property values from an array of objects into a new array.",
-    "example": `const arr = [{ name: 'Alice', age: 25 }, { name: 'Bob', age: 22 }];\nconst names = arr.map(obj => obj.name);\nconsole.log(names);  // Output: ['Alice', 'Bob']`
+    "example": `const arr = [{ name: 'Alice', age: 25 }, { name: 'Bob', age: 22 }];\n\const names = arr.map(obj => obj.name);\n\console.log(names);  // Output: ['Alice', 'Bob']`
   },
   {
     "href": "./task79.html",
     "text": "Compare Elements of Two Arrays",
     "explain": "This task compares the elements of two arrays to find common elements using `filter()` and `includes()`.",
-    "example": `const arr1 = [1, 2, 3];\nconst arr2 = [2, 3, 4];\nconst common = arr1.filter(value => arr2.includes(value));\nconsole.log(common);  // Output: [2, 3]`
+    "example": `const arr1 = [1, 2, 3];\n\const arr2 = [2, 3, 4];\n\const common = arr1.filter(value => arr2.includes(value));\n\console.log(common);  // Output: [2, 3]`
   },
   {
     "href": "./task80.html",
     "text": "Get Random Item From an Array",
     "explain": "This task demonstrates how to get a random item from an array.",
-    "example": `const arr = [1, 2, 3, 4, 5];\nconst randomItem = arr[Math.floor(Math.random() * arr.length)];\nconsole.log(randomItem);  // Output: Random element from array`
+    "example": `const arr = [1, 2, 3, 4, 5];\n\const randomItem = arr[Math.floor(Math.random() * arr.length)];\n\console.log(randomItem);  // Output: Random element from array`
   },
   {
     "href": "./task81.html",
     "text": "Get Random Item From an Array",
     "explain": "This task demonstrates how to get a random item from an array using `Math.random()`.",
-    "example": `const arr = ['apple', 'banana', 'cherry'];\nconst randomItem = arr[Math.floor(Math.random() * arr.length)];\nconsole.log(randomItem);  // Output: Random fruit from array`
+    "example": `const arr = ['apple', 'banana', 'cherry'];\n\const randomItem = arr[Math.floor(Math.random() * arr.length)];\n\console.log(randomItem);  // Output: Random fruit from array`
   },
   {
     "href": "./task82.html",
     "text": "Perform Intersection Between Two Arrays",
     "explain": "This task shows how to find common elements between two arrays using `filter()` and `includes()` methods.",
-    "example": `const arr1 = [1, 2, 3];\nconst arr2 = [2, 3, 4];\nconst intersection = arr1.filter(value => arr2.includes(value));\nconsole.log(intersection);  // Output: [2, 3]`
+    "example": `const arr1 = [1, 2, 3];\n\const arr2 = [2, 3, 4];\n\const intersection = arr1.filter(value => arr2.includes(value));\n\console.log(intersection);  // Output: [2, 3]`
   },
   {
     "href": "./task83.html",
     "text": "Split Array into Smaller Chunks",
     "explain": "This task shows how to split an array into smaller chunks using a loop or `slice()` method.",
-    "example": `const arr = [1, 2, 3, 4, 5];\nconst chunkSize = 2;\nconst chunks = [];\nfor (let i = 0; i < arr.length; i += chunkSize) {\n    chunks.push(arr.slice(i, i + chunkSize));\n}\nconsole.log(chunks);  // Output: [[1, 2], [3, 4], [5]]`
+    "example": `const arr = [1, 2, 3, 4, 5];\n\const chunkSize = 2;\n\const chunks = [];\n\for (let i = 0; i < arr.length; i += chunkSize) {\n\    chunks.push(arr.slice(i, i + chunkSize));\n\}\n\console.log(chunks);  // Output: [[1, 2], [3, 4], [5]]`
   },
   {
     "href": "./task84.html",
     "text": "Include a JS file in Another JS file",
     "explain": "This task demonstrates how to include one JavaScript file inside another using `import` or `<script>` tag.",
-    "example": `// main.js\nimport { add } from './math.js';\nconsole.log(add(2, 3));  // Output: 5`
+    "example": `// main.js\n\import { add } from './math.js';\n\console.log(add(2, 3));  // Output: 5`
   },
   {
     "href": "./task85.html",
     "text": "Get File Extension",
     "explain": "This task shows how to get the file extension from a file name using `split()` method.",
-    "example": `const fileName = 'image.jpg';\nconst extension = fileName.split('.').pop();\nconsole.log(extension);  // Output: 'jpg'`
+    "example": `const fileName = 'image.jpg';\n\const extension = fileName.split('.').pop();\n\console.log(extension);  // Output: 'jpg'`
   },
   {
     "href": "./task86.html",
     "text": "Check If A Variable Is undefined or null",
     "explain": "This task demonstrates how to check if a variable is `undefined` or `null` using `typeof` and strict equality.",
-    "example": `let value = null;\nconsole.log(value === null);  // Output: true\nlet anotherValue;\nconsole.log(anotherValue === undefined);  // Output: true`
+    "example": `let value = null;\n\console.log(value === null);  // Output: true\n\let anotherValue;\n\console.log(anotherValue === undefined);  // Output: true`
   },
   {
     "href": "./task87.html",
     "text": "Set a Default Parameter Value For a Function",
     "explain": "This task demonstrates how to set a default value for function parameters using default parameter syntax.",
-    "example": `function greet(name = 'Guest') {\n    console.log('Hello, ' + name);\n}\ngreet();  // Output: 'Hello, Guest'\ngreet('Alice');  // Output: 'Hello, Alice'`
+    "example": `function greet(name = 'Guest') {\n\    console.log('Hello, ' + name);\n\}\n\greet();  // Output: 'Hello, Guest'\n\greet('Alice');  // Output: 'Hello, Alice'`
   },
   {
     "href": "./task88.html",
     "text": "Illustrate Different Set Operations",
     "explain": "This task demonstrates various set operations, such as union, intersection, and difference using `Set`.",
-    "example": `const setA = new Set([1, 2, 3]);\nconst setB = new Set([3, 4, 5]);\nconst union = new Set([...setA, ...setB]);\nconst intersection = new Set([...setA].filter(x => setB.has(x)));\nconst difference = new Set([...setA].filter(x => !setB.has(x)));\nconsole.log(union);  // Output: Set { 1, 2, 3, 4, 5 }\nconsole.log(intersection);  // Output: Set { 3 }\nconsole.log(difference);  // Output: Set { 1, 2 }`
+    "example": `const setA = new Set([1, 2, 3]);\n\const setB = new Set([3, 4, 5]);\n\const union = new Set([...setA, ...setB]);\n\const intersection = new Set([...setA].filter(x => setB.has(x)));\n\const difference = new Set([...setA].filter(x => !setB.has(x)));\n\console.log(union);  // Output: Set { 1, 2, 3, 4, 5 }\n\console.log(intersection);  // Output: Set { 3 }\n\console.log(difference);  // Output: Set { 1, 2 }`
   },
   {
     "href": "./task89.html",
     "text": "Generate a Random Number Between Two Numbers",
     "explain": "This task demonstrates how to generate a random number between two given numbers using `Math.random()`.",
-    "example": `const randomNum = Math.floor(Math.random() * (10 - 5 + 1)) + 5;\nconsole.log(randomNum);  // Output: Random number between 5 and 10`
+    "example": `const randomNum = Math.floor(Math.random() * (10 - 5 + 1)) + 5;\n\console.log(randomNum);  // Output: Random number between 5 and 10`
   },
   {
     "href": "./task90.html",
     "text": "Get The Current URL",
     "explain": "This task demonstrates how to get the current URL of a page using `window.location.href`.",
-    "example": `const currentURL = window.location.href;\nconsole.log(currentURL);  // Output: 'https://example.com'`
+    "example": `const currentURL = window.location.href;\n\console.log(currentURL);  // Output: 'https://example.com'`
   },
   {
     "href": "./task91.html",
     "text": "Validate An Email Address",
     "explain": "This task demonstrates how to validate an email address using a regular expression.",
-    "example": `const email = 'test@example.com';\nconst isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);\nconsole.log(isValidEmail);  // Output: true`
+    "example": `const email = 'test@example.com';\n\const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);\n\console.log(isValidEmail);  // Output: true`
   },
   {
     "href": "./task92.html",
     "text": "Check If a Variable is of Function Type",
     "explain": "This task demonstrates how to check if a variable is a function using `typeof` operator.",
-    "example": `const fn = function() {};\nconsole.log(typeof fn === 'function');  // Output: true`
+    "example": `const fn = function() {};\n\console.log(typeof fn === 'function');  // Output: true`
   },
   {
     "href": "./task93.html",
     "text": "Work With Constants",
     "explain": "This task shows how to define constants using `const` and their behavior in JavaScript.",
-    "example": `const pi = 3.14;\nconsole.log(pi);  // Output: 3.14`
+    "example": `const pi = 3.14;\n\console.log(pi);  // Output: 3.14`
   },
   {
     "href": "./task94.html",
     "text": "Pass Parameter to a setTimeout() Function",
     "explain": "This task demonstrates how to pass a parameter to the `setTimeout()` function using an anonymous function.",
-    "example": `setTimeout(function() {\n    console.log('Hello after 2 seconds');\n}, 2000);`
+    "example": `setTimeout(function() {\n\    console.log('Hello after 2 seconds');\n\}, 2000);`
   },
   {
     "href": "./task95.html",
     "text": "Generate a Range of Numbers and Characters",
     "explain": "This task shows how to generate a range of numbers or characters using `for` loop or `String.fromCharCode()`.",
-    "example": `const range = [];\nfor (let i = 1; i <= 5; i++) {\n    range.push(i);\n}\nconsole.log(range);  // Output: [1, 2, 3, 4, 5]`
+    "example": `const range = [];\n\for (let i = 1; i <= 5; i++) {\n\    range.push(i);\n\}\n\console.log(range);  // Output: [1, 2, 3, 4, 5]`
   },
   {
     "href": "./task96.html",
     "text": "Perform Function Overloading",
     "explain": "This task demonstrates how function overloading works in JavaScript using the number of arguments passed.",
-    "example": `function sum(a, b) {\n    if (b === undefined) {\n        return a + a;\n    }\n    return a + b;\n}\nconsole.log(sum(2));  // Output: 4\nconsole.log(sum(2, 3));  // Output: 5`
+    "example": `function sum(a, b) {\n\    if (b === undefined) {\n\        return a + a;\n\    }\n\    return a + b;\n\}\n\console.log(sum(2));  // Output: 4\n\console.log(sum(2, 3));  // Output: 5`
   },
   {
     "href": "./task97.html",
     "text": "Implement a Stack",
     "explain": "This task demonstrates how to implement a stack using an array with `push()` and `pop()` methods.",
-    "example": `let stack = [];\nstack.push(1);\nstack.push(2);\nstack.pop();\nconsole.log(stack);  // Output: [1]`
+    "example": `let stack = [];\n\stack.push(1);\n\stack.push(2);\n\stack.pop();\n\console.log(stack);  // Output: [1]`
   },
   {
     "href": "./task98.html",
     "text": "Implement a Queue",
     "explain": "This task demonstrates how to implement a queue using an array with `push()` and `shift()` methods.",
-    "example": `let queue = [];\nqueue.push(1);\nqueue.push(2);\nqueue.shift();\nconsole.log(queue);  // Output: [2]`
+    "example": `let queue = [];\n\queue.push(1);\n\queue.push(2);\n\queue.shift();\n\console.log(queue);  // Output: [2]`
   },
   {
     "href": "./task99.html",
     "text": "Check if a Number is Float or Integer",
     "explain": "This task demonstrates how to check whether a number is a float or integer using `Number.isInteger()` and `parseFloat()`.",
-    "example": `const num1 = 10.5;\nconst num2 = 10;\nconsole.log(Number.isInteger(num1));  // Output: false\nconsole.log(Number.isInteger(num2));  // Output: true`
+    "example": `const num1 = 10.5;\n\const num2 = 10;\n\console.log(Number.isInteger(num1));  // Output: false\n\console.log(Number.isInteger(num2));  // Output: true`
   },
   {
     "href": "./task100.html",
     "text": "Pass a Function as Parameter",
     "explain": "This task demonstrates how to pass a function as a parameter to another function.",
-    "example": `function greet(name) {\n    console.log('Hello, ' + name);\n}\nfunction processUser(callback) {\n    const name = 'Alice';\n    callback(name);\n}\nprocessUser(greet);  // Output: 'Hello, Alice'`
+    "example": `function greet(name) {\n\    console.log('Hello, ' + name);\n\}\n\function processUser(callback) {\n\    const name = 'Alice';\n\    callback(name);\n\}\n\processUser(greet);  // Output: 'Hello, Alice'`
   },
   {
     "href": "./task101.html",
     "text": "Get the Dimensions of an Image",
     "explain": "This task demonstrates how to get the width and height of an image using JavaScript.",
-    "example": `const img = new Image();\nimg.src = 'image.jpg';\nimg.onload = function() {\n    console.log(img.width);  // Output: image width\n    console.log(img.height);  // Output: image height\n};`
+    "example": `const img = new Image();\n\img.src = 'image.jpg';\n\img.onload = function() {\n\    console.log(img.width);  // Output: image width\n\    console.log(img.height);  // Output: image height\n\};`
   },
   {
     "href": "./task102.html",
     "text": "Remove All Whitespaces From a Text",
     "explain": "This task demonstrates how to remove all whitespaces from a text using `replace()` method with a regular expression.",
-    "example": `const text = ' Hello World! ';\nconst noWhitespace = text.replace(/\s+/g, '');\nconsole.log(noWhitespace);  // Output: 'HelloWorld!'`
+    "example": `const text = ' Hello World! ';\n\const noWhitespace = text.replace(/\s+/g, '');\n\console.log(noWhitespace);  // Output: 'HelloWorld!'`
   },
   {
     "href": "./task103.html",
     "text": "Write to Console",
     "explain": "This task demonstrates how to write output to the console using `console.log()` method.",
-    "example": `const message = 'Hello, JavaScript!';\nconsole.log(message);  // Output: 'Hello, JavaScript!'`
+    "example": `const message = 'Hello, JavaScript!';\n\console.log(message);  // Output: 'Hello, JavaScript!'`
   },
   {
     "href": "./task104.html",
     "text": "Convert Date to Number",
     "explain": "This task demonstrates how to convert a date to a number using `getTime()` method.",
-    "example": `const date = new Date();\nconst timestamp = date.getTime();\nconsole.log(timestamp);  // Output: timestamp number representing the date`
+    "example": `const date = new Date();\n\const timestamp = date.getTime();\n\console.log(timestamp);  // Output: timestamp number representing the date`
   }
   ]
 
