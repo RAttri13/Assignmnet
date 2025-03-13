@@ -26,11 +26,8 @@
                                 </textarea><br><br>
                     <input placeholder="type a number" type="text" id="num1" class="px-3 py-1 rounded w-100"/>
                     <button onclick="sortAndDisplay()" id="outputBtn" class="rounded p-2 w-100">Get Roots</button>
-                
                 </div>
-                
             </div>  
-            
           </div>
         </div>
             <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -39,47 +36,38 @@
             <script src="./Components/3InputField.js"></script>
             
             <script>
-       
-    
-    function sortAndDisplay() {
-        const arrayInput = document.getElementById("arrayInput").value;
-        const num1 = document.getElementById("num1").value;
-        const result = document.getElementById("result");
-    
-        try {
-            const arrayOfObjects = JSON.parse(arrayInput);
-    
-            if (Array.isArray(arrayOfObjects) && arrayOfObjects.every(item => typeof item === 'object' && item !== null)) {
-    
-                const sortedArray = arrayOfObjects.sort((a, b) => {
-                    if (a[num1] < b[num1]) {
-                        return -1;
+                function sortAndDisplay() {
+                    const arrayInput = document.getElementById("arrayInput").value;
+                    const num1 = document.getElementById("num1").value;
+                    const result = document.getElementById("result");
+                
+                    try {
+                        const arrayOfObjects = JSON.parse(arrayInput);
+                
+                        if (Array.isArray(arrayOfObjects) && arrayOfObjects.every(item => typeof item === 'object' && item !== null)) {
+                
+                            const sortedArray = arrayOfObjects.sort((a, b) => {
+                                if (a[num1] < b[num1]) {
+                                    return -1;
+                                }
+                                if (a[num1] > b[num1]) {
+                                    return 1;
+                                }
+                                return 0;
+                            });
+                
+                            result.innerHTML = `<strong>Sorted Array:</strong> <pre>${JSON.stringify(sortedArray, null, 2)}</pre>`;
+                        } else {
+                            result.innerHTML = "Invalid input. Please make sure the input is a valid array of objects.";
+                        }
+                    } catch (e) {
+                        result.innerHTML = "Error ,invalid input";
                     }
-                    if (a[num1] > b[num1]) {
-                        return 1;
-                    }
-                    return 0;
-                });
+                }
     
-                result.innerHTML = `<strong>Sorted Array:</strong> <pre>${JSON.stringify(sortedArray, null, 2)}</pre>`;
-            } else {
-                result.innerHTML = "Invalid input. Please make sure the input is a valid array of objects.";
-            }
-        } catch (e) {
-            result.innerHTML = "Error ,invalid input";
-        }
-    }
-    
-    
-            
             </script>
-        
-        </body>
-        
-    
     </body>
-    
-    </html>
+</html>
     
     
     

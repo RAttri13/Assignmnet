@@ -8,58 +8,45 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-          
-        
         <title >Lets Pay With JS</title>
-    
     </head>
     
-    
-         
     <body id="bodyContainer" class="bg-lightTheme">
         <div id="sectionsContainer" class="d-flex flex-column g-2 opacityHam ">
          <div id="sectionsSubContainer" class="d-flex flex-row g-2 opacityHam ">
             <div id="UICont" class="w-100 d-flex flex-column align-items-center  rounded-start bg-white w-75 gap-3 overflow-scroll border border-success p-4  mb-2 border-opacity-25 bg-white">
                 <div id="displayUIContainer" class="bg-lightTheme p-3  h-100 d-flex flex-column gap-3 align-items-center w-75 rounded-3">
                         <textarea id="arrayInput" rows="5" cols="40">
-                                [{"name": "John", "age": 30}, {"name": "Alice", "age": 25}, {"name": "Bob", "age": 35}]
-                                </textarea><br><br>
-                    <button onclick="sortAndDisplay()" id="outputBtn" class="rounded p-2 w-100">Get Roots</button>
-                
+                            [{"name": "John", "age": 30}, {"name": "Alice", "age": 25}, {"name": "Bob", "age": 35}]
+                        </textarea><br><br>
+                    <button onclick="setOperation()" id="outputBtn" class="rounded p-2 w-100">Get Roots</button>
                 </div>
-                
             </div>  
-            
           </div>
         </div>
-            <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-            <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-            <script src="../index.js"></script>
-            <script src="./Components/3InputField.js"></script>
-            
-            <script>
-       
-    
-    function sortAndDisplay() {
-        const arrayInput = document.getElementById("arrayInput").value;
-        const result = document.getElementById("result");
-        const setA = new Set([1, 2, 3]); 
-        debugger
-        const setB = new Set([3, 4, 5]); 
-        const union = new Set([...setA, ...setB]); 
-        const intersection = new Set([...setA].filter(x => setB.has(x))); 
-        const difference = new Set([...setA].filter(x => !setB.has(x))); 
-        console.log(union);
-         console.log(intersection); 
-         console.log(difference); 
-    }    
-            </script>
-        </body>
         
-    
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+        <script src="../index.js"></script>
+        <script src="./Components/3InputField.js"></script>
+        
+        <script>
+            function setOperation() {
+                const arrayInput = document.getElementById("arrayInput").value;
+                const result = document.getElementById("result");
+                const setA = new Set([1, 2, 3]); 
+                debugger
+                const setB = new Set([3, 4, 5]); 
+                const union = new Set([...setA, ...setB]); 
+                const intersection = new Set([...setA].filter(x => setB.has(x))); 
+                const difference = new Set([...setA].filter(x => !setB.has(x))); 
+                console.log(union);
+                console.log(intersection); 
+                console.log(difference); 
+            }    
+        </script>
     </body>
-    
-    </html>
+</html>
     
     
     

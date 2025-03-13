@@ -25,50 +25,41 @@
                     </div>  
                 </div>
             </div>
-    
          
             <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
             <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
             <script src="../index.js"></script>
             <!-- <script src="./Components/1InputField.js"></script> -->
-            
             <script>
-     
-    
-            function handlesReplace() {
-                const num1 = document.getElementById("num1").value;
-                const num2 = document.getElementById("num2").value;
-                const num3 = document.getElementById("num3").value;
-                const result = document.getElementById("result");
-    
-             if  ((/^[A-Za-z]+$/.test(num2)&&(num3)&& num1.includes(num2) )){
-                result.innerHTML = `old sentence : 
-                ${num1}
-                <br>
-                new sentence : ${replace(num1,num2,num3)}`;
-                    result.style.display="flex"        
-              }else alert("Enter A Valid Character")
-    
-            }
+                function handlesReplace() {
+                    const num1 = document.getElementById("num1").value;
+                    const num2 = document.getElementById("num2").value;
+                    const num3 = document.getElementById("num3").value;
+                    const result = document.getElementById("result");
+        
+                    if  ((/^[A-Za-z]+$/.test(num2)&&(num3)&& num1.includes(num2) )){
+                        result.innerHTML = `old sentence : 
+                        ${num1}
+                        <br>
+                        new sentence : ${replace(num1,num2,num3)}`;
+                            result.style.display="flex"        
+                    }else alert("Enter A Valid Character")
+        
+                 }
          
-            function replace(originalString, oldChar, newChar) {
-        let modifiedString = '';
-    
-        for (let i = 0; i < originalString.length; i++) {
-            if (originalString[i] === oldChar) {
-                modifiedString += newChar;
-            } else {
-                modifiedString += originalString[i];
-            }
-        }
-    
-        return modifiedString;
-    }
-    
-    
+                function replace(originalString, oldChar, newChar) {
+                    let modifiedString = '';
+                
+                    for (let i = 0; i < originalString.length; i++) {
+                        if (originalString[i] === oldChar) {
+                            modifiedString += newChar;
+                        } else {
+                            modifiedString += originalString[i];
+                        }
+                    }
+                    return modifiedString;
+                }
         </script>
-    
     </body>
-    
-    </html>
+</html>
 

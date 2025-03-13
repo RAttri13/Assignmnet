@@ -34,27 +34,24 @@
         
         
                     <script>
-             
-            
-                    function checkArray() {
-                        const num1 = document.getElementById("num1").value;
-                        const num2 = document.getElementById("num2").value;
-                        const result = document.getElementById("result");
-            
-                        try {
-                            const parsedInput = JSON.parse(num1);
-                            if (Array.isArray(parsedInput)) {
-                               (parsedInput.unshift(num2))
-                               console.log(parsedInput)
+                        function checkArray() {
+                            const num1 = document.getElementById("num1").value;
+                            const num2 = document.getElementById("num2").value;
+                            const result = document.getElementById("result");
+
+                            try {
+                                const parsedInput = JSON.parse(num1);
+                                if (Array.isArray(parsedInput)) {
+                                (parsedInput.unshift(num2))
+                                console.log(parsedInput)
                                 result.innerHTML = ` [${parsedInput}]`;
-                            } else {
+                                } else {
                                 result.innerHTML = "No, it's not an array.";
-                            }
+                                }
                             } catch (e) {
                                 result.innerHTML = " Input is not a valid array.";
                             }
                         }
-            
                 </script>
             
             </body>
